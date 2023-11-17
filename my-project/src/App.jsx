@@ -10,7 +10,7 @@ import img6 from "./assets/images/h6.jpg"
 import img7 from "./assets/images/h7.jpg"
 import img8 from "./assets/images/h8.jpg"
 const products = [
-  { id: 1, name: 'House1', price: 100000, image: img1 },
+  { id: 1, name: 'House1', price: 100000, image: img1, info: 'fdldnmnvkjbvbn vnsvh v' },
   { id: 2, name: 'house2', price: 20000, image: img2 },
   { id: 3, name: 'Smart Watch', price: 100, image: img3 },
   { id: 4, name: 'Headphone', price: 200, image: img4 },
@@ -29,6 +29,7 @@ const ProductGrid = () => {
           <img src={product.image} alt={product.name} className="product-image" />
           <div className="product-info">
             <h3 className="product-name">{product.name}</h3>
+            <p className="product-price">{product.info}</p>
             <p className="product-price">${product.price.toFixed(2)}</p>
             <button className="add-to-cart" onClick={() => alert(`Added ${product.name} to Cart`)}>
               Add to Cart
